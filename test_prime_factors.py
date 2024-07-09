@@ -6,3 +6,6 @@ class PrimeFactorTest(TestCase):
         prime_factor = PrimeFactor()
         self.assertEqual([],prime_factor.of(1))
 
+    def test_prime_factor_of_2(self):
+        prime_factor = PrimeFactor()
+        self.assertEqual([2], prime_factor.of(2))
